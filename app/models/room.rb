@@ -1,0 +1,3 @@
+class Room < Base
+  
+end

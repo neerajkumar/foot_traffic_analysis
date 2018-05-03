@@ -1,0 +1,3 @@
+class Visitor < Base
+  
+end
