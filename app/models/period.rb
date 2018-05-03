@@ -9,7 +9,7 @@ class Period < Base
     @status = st
   end
 
-  def exit_period(v, r, st, t_out)
+  def self.exit_period(v, r, st, t_out)
     period = Period.all.find { |p| p.visitor == v.to_i && p.room == r.to_i }
     period.time_out = t_out.to_i
     period.status = st
