@@ -29,25 +29,25 @@ For each room that had log data associated with it, print the room index (starti
 
       Room 0, 20 minute average visit, 2 visitor(s) total
       
-### How to Run
+## How to Run
 
 We should be able to upload a text file and get the parsed result.
 
-### Demo URL
+## Demo URL
 
 https://foot-traffic-analysis.herokuapp.com
 
-### Installation
+## Installation
 
 Clone the repository and run command ```bundle install``` and then start the server ```bundle exec rails s```. You can see the webpage on ```http://localhost:3000```.
 
-### Running Test Cases
+## Running Test Cases
 
-#### Controller Specs
+### Controller Specs
 
       bundle exec rspec spec/controllers/analysis_reports_controller_spec.rb
 
-#### Model Specs
+### Model Specs
 
       bundle exec rspec spec/models/period_spec.rb
       bundle exec rspec spec/models/report_spec.rb
