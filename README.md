@@ -32,3 +32,11 @@ For each room that had log data associated with it, print the room index (starti
 ### How to Run
 
 We should be able to upload a text file and get the parsed result.
+
+### Demo URL
+
+https://foot-traffic-analysis.herokuapp.com
+
+### Installation
+
+Clone the repository and run command ```bundle install``` and then start the server ```bundle exec rails s```. You can see the webpage on ```http://localhost:3000```.
