@@ -1,0 +1,28 @@
+<h1>Upload File</h1>
+<%= form_tag('/analysis_reports', method: :post, multipart: true ) do -%>
+	<div class="form-group">
+		<%= file_field_tag(:logfile, class: 'form-control') %>
+    <small class="form-text text-muted">Supportive Format: .log, .txt only</small>
+  </div>
+	<%= submit_tag 'Generate Report', class: 'btn btn-primary' %>
+<% end %>
+
+<h1>Report</h1>
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Report</th>
+    </tr>
+  </thead>
+  <tbody>
+  	<% count = 1 %>
+  	<% @analysis_hash.each do |key, value| %>
+	    <tr>
+	      <th scope="row"><%= count -%></th>
+	      <td>Room <%= key.to_s -%>, <%= value[1] -%> minute average visit, <%= value[0] -%> visitor total</td>
+	    </tr> 
+  		<% count += 1 %>
+  	<% end %>
+  </tbody>
+</table>

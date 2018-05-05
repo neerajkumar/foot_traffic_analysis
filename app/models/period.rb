@@ -29,5 +29,5 @@ class Period < Base
       puts 'wrong input'
     end
   end
-  
+
 end
