@@ -41,7 +41,7 @@ https://foot-traffic-analysis.herokuapp.com
 
 Clone the repository and run command ```bundle install``` and then start the server ```bundle exec rails s```. You can see the webpage on ```http://localhost:3000```.
 
-### Test Cases
+### Running Test Cases
 
 #### Controller Specs
 
